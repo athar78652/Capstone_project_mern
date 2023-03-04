@@ -1,9 +1,9 @@
 import { Drawer, List, ListItemButton, ListItemIcon, ListItemText, Stack, Toolbar, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import menuConfigs from "../../configs/menu.config";
+import menuConfigs from "../../configs/menu.configs";
 import Logo from "./Logo";
-import uiConfigs from "../../configs/ui.config";
+import uiConfigs from "../../configs/ui.configs";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 
