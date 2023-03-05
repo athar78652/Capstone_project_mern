@@ -1,8 +1,8 @@
 import React from 'react';
 import HeroSlide from '../components/common/HeroSlide';
-import tmdbConfigs from "../api/configs/tmdb.configs";
+import tmdbConfigs from "../api/configs/tmdb.config";
 import { Box } from '@mui/material';
-import uiConfigs from "../configs/ui.configs";
+import uiConfigs from "../configs/ui.config";
 import Container from "../components/common/Container";
 import MediaSlide from "../components/common/MediaSlide";
 

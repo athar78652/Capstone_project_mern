@@ -13,8 +13,8 @@ import CircularRate from "../components/common/CircularRate";
 import Container from "../components/common/Container";
 import ImageHeader from "../components/common/ImageHeader";
 
-import uiConfigs from "../configs/ui.configs";
-import tmdbConfigs from "../api/configs/tmdb.configs";
+import uiConfigs from "../configs/ui.config";
+import tmdbConfigs from "../api/configs/tmdb.config";
 import mediaApi from "../api/modules/media.api";
 import favoriteApi from "../api/modules/favorite.api";
 
