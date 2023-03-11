@@ -20,11 +20,11 @@ import {
   TelegramShareButton,
   WhatsappShareButton,
   EmailShareButton,
+  LinkedinIcon,
 } from 'react-share';
 
 import {
   FacebookShareCount,
-  GooglePlusShareCount,
   LinkedinShareCount, 
 } from 'react-share';
 
@@ -141,6 +141,39 @@ const FavoriteList = () => {
      
           
 </WhatsappShareButton>
+
+{/* linkedin */}
+
+<LinkedinShareButton url={url}>
+<LinkedinIcon/>
+     
+          
+</LinkedinShareButton>
+
+{/* Twitter */}
+
+<TwitterShareButton url={url}>
+<TwitterIcon/>
+     
+          
+</TwitterShareButton>
+
+{/* Email */}
+<EmailShareButton url={url}>
+<EmailIcon/>
+     
+          
+</EmailShareButton>
+
+{/* Telegram */}
+
+<TelegramShareButton url={url}>
+<TelegramIcon/>
+     
+          
+</TelegramShareButton>
+
+
 
 {/* <CopyToClipboard text={url}
           onCopy={handleCopy}>
