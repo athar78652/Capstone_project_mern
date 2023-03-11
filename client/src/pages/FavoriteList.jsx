@@ -11,6 +11,35 @@ import favoriteApi from "../api/modules/favorite.api";
 import { setGlobalLoading } from "../redux/features/globalLoadingSlice";
 import { removeFavorite } from "../redux/features/userSlice";
 
+
+
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+} from 'react-share';
+
+import {
+  FacebookShareCount,
+  GooglePlusShareCount,
+  LinkedinShareCount, 
+} from 'react-share';
+
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  WorkplaceIcon,
+  EmailIcon,
+} from 'react-share';
+
+
+
+
 const FavoriteItem = ({ media, onRemoved }) => {
   const dispatch = useDispatch();
 
@@ -85,9 +114,39 @@ const FavoriteList = () => {
     setCount(count - 1);
   };
 
+  const url=window.location.href; 
+
+
+
   return (
     <Box sx={{ ...uiConfigs.style.mainContent }}>
       <Container header={`Your favorites (${count})`}>
+
+
+      <div className="mediashare">
+<FacebookShareButton url={url}>
+<FacebookIcon/>
+     
+          <FacebookShareCount url={url}>
+  {shareCount => (
+    <span className="myShareCountWrapper">{shareCount}</span>
+  )}
+  
+</FacebookShareCount>
+</FacebookShareButton>
+
+{/* whatsapp button */}
+<WhatsappShareButton url={url}>
+<WhatsappIcon/>
+     
+          
+</WhatsappShareButton>
+
+{/* <CopyToClipboard text={url}
+          onCopy={handleCopy}>
+          <button>Copy Link for Share</button>
+        </CopyToClipboard> */}
+        </div>
         <Grid container spacing={1} sx={{ marginRight: "-8px!important" }}>
           {filteredMedias.map((media, index) => (
             <Grid item xs={6} sm={4} md={3} key={index}>

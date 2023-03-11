@@ -13,6 +13,12 @@ import { setGlobalLoading } from "../redux/features/globalLoadingSlice";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { routesGen } from "../routes/routes";
 
+
+
+
+
+
+
 const ReviewItem = ({ review, onRemoved }) => {
   const [onRequest, setOnRequest] = useState(false);
 
@@ -133,9 +139,21 @@ const ReviewList = () => {
     setCount(count - 1);
   };
 
+
+
+  
+
+
+
   return (
     <Box sx={{ ...uiConfigs.style.mainContent }}>
       <Container header={`Your reviews (${count})`}>
+
+     
+
+
+
+
         <Stack spacing={2}>
           {filteredReviews.map((item) => (
             <Box key={item.id}>
